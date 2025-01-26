@@ -11,7 +11,10 @@
   loop:
   - nodejs
   - mysql
+
 - name: include common tasks
+  tags:
+  - deployment
   include_role:
     name: common
     tasks_from: main
@@ -65,6 +68,8 @@
 
 
 - name: deamon reload
+    tags:
+  - deployment
   ansible.builtin.systemd_service:
     enabled: true
     state: restarted
