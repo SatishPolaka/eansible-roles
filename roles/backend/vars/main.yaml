@@ -1,3 +1,5 @@
 mysql_host: mysql.psrexpense.store
 mysql_user: root
 mysql_password: ExpenseApp@1
+dir_location: /app
+component: backend
