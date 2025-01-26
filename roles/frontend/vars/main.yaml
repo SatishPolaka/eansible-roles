@@ -1,1 +1,3 @@
 backend_host: backend.psrexpense.store
+dir_location: /usr/share/nginx/html
+component: frontend
